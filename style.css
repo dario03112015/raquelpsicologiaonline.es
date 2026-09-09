@@ -546,23 +546,75 @@ button {
     box-shadow:
         0 40px 90px rgba(60, 110, 105, 0.22);
 }
+/* =====================================================
+   FLOATING CARD
+===================================================== */
 
 .floating-card {
     position: absolute;
-    z-index: 5;
     bottom: 30px;
     left: -40px;
-    padding: 18px 22px;
-    background: rgba(255, 255, 255, 0.94);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.8);
+
+    padding: 13px 16px;
+
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 14px;
-    box-shadow:
-        0 20px 50px rgba(50, 90, 85, 0.13);
+
+    box-shadow: 0 13px 30px rgba(30, 80, 90, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    z-index: 5;
+
     animation:
-        floatingCard 4s ease-in-out infinite;
+        floatingCard 1s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
 }
+
+.floating-card span {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    color: var(--aqua-dark);
+}
+
+.floating-card strong {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.floating-card small {
+    font-size: 9px;
+    color: var(--text-light);
+}
+/* =====================================================
+   FLOATING CARD — MÓVIL
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .floating-card {
+        left: -5px;
+        bottom: 15px;
+        padding: 12px 14px;
+    }
+
+    .floating-card span {
+        font-size: 8px;
+    }
+
+    .floating-card strong {
+        font-size: 11px;
+    }
+
+    .floating-card small {
+        font-size: 9px;
+    }
+
+}
+
 
 .floating-card span {
     display: block;
@@ -1962,4 +2014,132 @@ footer {
         transition-duration: 0.01ms !important;
     }
 }
+/* =====================================================
+   COMPOSICIÓN ELEGANTE DE DOS FOTOS
+===================================================== */
 
+.hero-images {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 620px;
+    height: 540px;
+    margin: auto;
+}
+
+/* FOTO PRINCIPAL */
+.hero-images .hero-image:first-child {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 330px;
+    max-width: none;
+    margin: 0;
+    z-index: 2;
+}
+
+/* SEGUNDA FOTO */
+.hero-images .hero-image-secondary {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 245px;
+    max-width: none;
+    margin: 0;
+    z-index: 3;
+}
+
+/* Imagen principal */
+.hero-images .hero-image:first-child img {
+    width: 100%;
+}
+
+/* Foto del portátil: NO RECORTAR */
+.hero-images .hero-image-secondary img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    display: block;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 20px 50px rgba(30, 80, 90, 0.18);
+
+    background: white;
+}
+
+/* Decoración detrás de la composición */
+.hero-images::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 20px;
+    top: 100px;
+
+    background: #dff7f3;
+    border-radius: 50%;
+
+    z-index: 0;
+}
+
+/* Segunda foto ligeramente inclinada */
+.hero-images .hero-image-secondary {
+    transform: rotate(4deg);
+    transition: transform 0.4s ease;
+}
+
+.hero-images .hero-image-secondary:hover {
+    transform: rotate(1deg) translateY(-6px);
+}
+
+/* =====================================================
+   MÓVIL
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .hero-images {
+        max-width: 560px;
+        height: 500px;
+    }
+
+    .hero-images .hero-image:first-child {
+        width: 300px;
+    }
+
+    .hero-images .hero-image-secondary {
+        width: 220px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .hero-images {
+        height: auto;
+        min-height: 430px;
+        max-width: 380px;
+    }
+
+    .hero-images .hero-image:first-child {
+        width: 250px;
+        left: 0;
+        top: 10px;
+    }
+
+    .hero-images .hero-image-secondary {
+        width: 190px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .hero-images::before {
+        width: 220px;
+        height: 220px;
+        right: 0;
+        top: 80px;
+    }
+
+}
