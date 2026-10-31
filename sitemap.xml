@@ -1,6 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://raquelpsicologiaonline.es/</loc>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://raquelpsicologiaonline.es/terapia-toc-online.html</loc>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://raquelpsicologiaonline.es/terapia-pareja-online.html</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
 </urlset>

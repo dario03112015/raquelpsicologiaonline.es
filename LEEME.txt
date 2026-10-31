@@ -1,0 +1,132 @@
+ACTUALIZACIÓN DE LA WEB Y DEL ASISTENTE
+31 de octubre de 2026
+
+DATOS CONFIRMADOS POR RAQUEL
+
+- Sesión individual: 1 hora y 15 minutos, 70 €.
+- Sesión de pareja: 1 hora y 15 minutos, 70 €.
+- Videollamadas: principalmente WhatsApp y Zoom.
+- Atención a niños, adolescentes y adultos, y terapia de pareja.
+- Ansiedad, TOC y los demás ámbitos ya descritos en la portada.
+- Número de colegiada MU-02816.
+
+ARCHIVOS DE ESTE PAQUETE
+
+index.html
+Portada actualizada sobre tu diseño original, con los servicios y los datos
+de las sesiones. Enlaza a las dos páginas nuevas desde las tarjetas de
+especialidades.
+
+terapia-toc-online.html
+Página propia de atención psicológica online para el TOC.
+
+terapia-pareja-online.html
+Página propia de terapia de pareja online.
+
+sitemap.xml
+Sitemap con las tres direcciones: portada y dos páginas nuevas.
+
+robots.txt
+Indica que la web se puede rastrear y dónde está el sitemap.
+
+informacion-consulta-raquel-completa.txt
+Base de conocimientos actualizada para sustituir la anterior en Chatling.
+Incorpora duración, plataformas y tarifa de pareja, y elimina las respuestas
+antiguas que indicaban que esos datos no estaban confirmados.
+
+DISEÑO Y CHAT
+
+Se ha partido del HTML que está publicado, con el diseño original y las
+fotografías y tipografías incorporadas. Los tres HTML llevan sus estilos y
+JavaScript dentro: no necesitan archivos CSS o imágenes adicionales para
+mostrar el diseño. El chat sigue necesitando conexión a internet.
+
+La portada conserva las seis tarjetas y el resto de secciones existentes.
+Los enlaces nuevos llevan a páginas que reutilizan la misma tipografía,
+colores, fotos, botones y estilos de la web. Los textos pueden cambiar de
+altura al ajustarse a la pantalla.
+
+El código de Chatling se ha conservado con el mismo agente. Se ha corregido
+el fragmento que aparecía como <guion> antes de la cabecera: ahora utiliza
+<script> y se coloca al final del cuerpo del HTML. No se crea otro agente.
+
+CÓMO REVISAR LA VERSIÓN ANTES DE SUBIRLA
+
+1. Descarga el ZIP y pulsa «Extraer todo».
+2. Abre index.html desde la carpeta extraída, en Chrome o Edge.
+3. En Especialidades, prueba los enlaces de TOC y terapia de pareja.
+4. Revisa también los textos clínicos y la presentación de tu servicio.
+   La página de TOC incluye una breve explicación general con fuente NIMH;
+   no atribuye a tu práctica técnicas específicas que no hayas confirmado.
+5. Comprueba las tarifas, los 75 minutos y las plataformas de las sesiones.
+
+CÓMO PUBLICAR EN GITHUB
+
+1. Guarda una copia de la versión actual del repositorio con Code > Download ZIP.
+2. Abre https://github.com/dario03112015/raquelpsicologiaonline.es
+3. Ve a la carpeta donde está el index.html que publica GitHub Pages.
+4. Pulsa Add file > Upload files y sube estos archivos extraídos:
+   - index.html
+   - terapia-toc-online.html
+   - terapia-pareja-online.html
+   - sitemap.xml
+   - robots.txt
+5. Confirma con Commit changes y espera a que termine el despliegue de Pages.
+
+Sube los archivos en la misma carpeta, sin crear una carpeta superior para
+esta actualización. No subas el ZIP como si fuera la página.
+El TXT del asistente y este LEEME no necesitan publicarse en el repositorio.
+Conserva CNAME, los archivos de verificación de Google y los documentos
+propios que ya tengas. No necesitas cambiar DNS, dominio ni Enforce HTTPS.
+
+COMPROBACIÓN TRAS PUBLICAR
+
+Abre estas direcciones y comprueba que cargan:
+https://raquelpsicologiaonline.es/
+https://raquelpsicologiaonline.es/terapia-toc-online.html
+https://raquelpsicologiaonline.es/terapia-pareja-online.html
+https://raquelpsicologiaonline.es/sitemap.xml
+
+Si aparece la versión anterior de la portada, recarga con Ctrl + F5.
+Prueba que el chat sigue abriéndose, que el menú lleva a la portada y que
+los enlaces de contacto funcionan. Revisa el aspecto en tu móvil.
+
+ACTUALIZAR CHATLING DESPUÉS DE PUBLICAR LA WEB
+
+1. En Knowledge Base, sube informacion-consulta-raquel-completa.txt.
+2. Espera al estado Processed.
+3. Retira las versiones anteriores del TXT de la consulta para que no queden
+   fuentes con respuestas contradictorias sobre duración y precio de pareja.
+4. Conserva las instrucciones del asistente que ya configuraste.
+5. En Playground o en el chat de la web prueba:
+   ¿Cuánto dura una sesión individual? -> 1 hora y 15 minutos / 75 minutos.
+   ¿Cuánto dura la sesión de pareja? -> 1 hora y 15 minutos / 75 minutos.
+   ¿Cuánto cuesta la sesión de pareja? -> 70 €.
+   ¿Qué plataforma utilizas? -> Principalmente WhatsApp y Zoom.
+
+Las condiciones de los bonos para terapia de pareja siguen sin confirmarse;
+por eso el asistente remitirá esa pregunta a Raquel.
+
+SEARCH CONSOLE
+
+El sitemap conserva su dirección, pero ahora contiene tres páginas.
+Revisa que el estado siga siendo Correcto. Inspecciona las dos páginas nuevas
+con sus URL completas y utiliza Probar URL publicada para comprobar que
+Google puede acceder a ellas. Si la prueba es correcta, puedes solicitar
+su indexación. No es necesario repetir la solicitud todos los días.
+
+COMPROBACIONES DE CÓDIGO
+
+Se comprueban las referencias entre páginas, los identificadores, los datos
+estructurados, el sitemap y la sintaxis del JavaScript incorporado. También
+se compara el estilo original y se conserva el identificador del agente.
+La prueba visual automática en navegador no está disponible en el entorno
+de preparación: revisa el diseño y los textos antes de publicarlos.
+
+FUENTE DE LA INFORMACIÓN GENERAL SOBRE TOC
+National Institute of Mental Health (NIMH):
+https://www.nimh.nih.gov/health/publications/espanol/trastorno-obsesivo-compulsivo
+
+Estas páginas son una propuesta de presentación del servicio. No se han
+inventado titulaciones, edad mínima, condiciones de bonos, disponibilidad
+de agenda ni métodos terapéuticos concretos adicionales.
