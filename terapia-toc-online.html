@@ -2521,7 +2521,79 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
  .service-page .service-faq details { padding:18px 20px; }
  .service-page .hero { padding-top:25px; }
 }
-</style></head>
+</style>
+<style id="contrast-improvements">
+/* Contraste: conservar la paleta, la composición y las medidas originales. */
+:root {
+    --aqua-dark: #447f74;
+    --aqua-ink: #316c62;
+    --muted-ink: #526b65;
+    --text: #526762;
+}
+
+.eyebrow,
+.logo span,
+.floating-card span,
+.text-link,
+.reserve-button,
+.step > span,
+.therapy-box span,
+.pricing-card li span,
+.nav-links a:hover,
+.tarifas-link:hover,
+.service-link,
+.service-page .service-breadcrumb a,
+.service-page .service-source a,
+.service-page .service-related a {
+    color: var(--aqua-ink);
+}
+
+.hero-mini-info,
+.credentials span,
+.floating-card small,
+.trust-bar span,
+.card-number,
+.pricing-label,
+.pricing-price span,
+.pricing-saving {
+    color: var(--muted-ink);
+}
+
+.trust-bar strong {
+    color: var(--aqua-dark);
+}
+
+.pricing-badge,
+.pricing-card li,
+.contact-details p,
+.service-page .service-intro > p,
+.service-page .service-faq details p {
+    color: var(--text);
+}
+
+.secondary {
+    color: var(--aqua-ink);
+}
+
+.primary,
+.pricing-button:hover {
+    background: var(--aqua-ink);
+    color: #ffffff;
+}
+
+.primary:hover {
+    background: #285c54;
+}
+
+.primary::before {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.hero-buttons .whatsapp-button {
+    color: #173d28;
+}
+</style>
+</head>
 
 <body class="service-page">
 
